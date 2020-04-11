@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles(1).css">
+    <title>Repuestos Registrados</title>
+</head>
+
+<br>
+<br>
+<br>
+<body>
+<body id="page-top">
+
+    <!-- Navigation -->
+    <a class="menu-toggle rounded" href="#">
+    <i class=" glyphicon-chevron-left"></i>
+    </a>
+
+   <a class="menu-toggle rounded" href="#">
+      <i class="fas fa-bars"></i>
+    </a>
+    
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger" href="#page-top">Taller BMC</a>
+        </li>
+        
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="index2.html">Inicio</a>
+        </li>
+    
+        
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="listadoTrabajadores.html">Trabajadores Registrados</a>
+        </li>
+        
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="actualizarTrabajador.html">Actualizar Trabajador</a>
+        </li>
+
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="eliminarTrabajador.html">Eliminar Trabajador</a>
+        </li>
+
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="reporteTrabajadores.html">Reporte de Trabajadores</a>
+        </li>
+        
+      </ul>
+    </nav>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Empleados Registrados</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+</head>
+
+
+
+
+    <div class="container" id="advanced-search-form">
+        <h2>Empleados Registrados</h2>
+        <!--<form method ="post" action="../../Back/listadoEmpleados.php">-->
+
+             <table class="table table-dark" id="empleados">
+      
+            </table>
+           
+      <!--</form>-->
+    </div>
+    
+</body>
+
+
+
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.post('../../Back/listadoEmpleados.php').done(function(result){
+                $('#empleados').html(result);
+            });
+        });
+    </script>
+
+  </body>
+
+</html>

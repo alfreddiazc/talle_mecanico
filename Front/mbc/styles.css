@@ -1,0 +1,519 @@
+html{
+    background: url("background.jpg") no-repeat;
+	background-size: cover;
+    min-height: 200%;
+}
+
+body{
+	background-color: transparent;
+}
+
+
+
+/* trabajador */
+
+
+#registration-form-trabajador{
+	max-width: 800px;
+	margin: 120px auto;
+}
+
+
+
+#registration-form-trabajador .image{
+	float:left;
+	background-image: url("desk.jpg");
+	height: 500px;
+	width: 50%;
+	background-size: cover;
+	background-position: 25%;
+}
+
+#registration-form-trabajador .frm{
+	float:right;
+	height: 500px;
+    width: 50%;
+    min-width: 250px;
+    padding: 0 35px;
+    background-size: 100% 100%;
+    background-color: white;
+}
+
+#registration-form-trabajador h1{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+#registration-form-trabajador .form-control{
+	width: 90%;
+	padding: 12px 20px;
+	height: auto;
+}
+
+@media screen and (max-width: 700px){
+	#registration-form-trabajador .image{
+		width: 30%;
+	    background-position: 60%;
+	}
+
+	#registration-form-repuesto-trabajador .frm{
+		width: 70%;
+	}
+
+	#registration-form-trabajador .form-control{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 500px){
+	#registration-form-trabajador .image{
+		display: none;
+	}
+
+	#registration-form-trabajador .frm{
+		width: 100%;
+	}
+
+	#registration-form-trabajador h1{
+		text-align: center;
+	}
+
+	#registration-form-trabajador .btn{
+		width: 100%;
+		margin-top: 20px;
+	}
+}
+
+
+
+/* cliente */
+
+#registration-form-cliente{
+	max-width: 400px;
+	margin: 120px auto;
+}
+
+#registration-form-cliente{
+	max-width: 500px;
+	margin: 120px auto;
+}
+
+
+
+#registration-form-cliente .image{
+	float:left;
+	background-image: url("desk(1).jpg");
+	height: 800px;
+	width: 50%;
+	background-size: cover;
+	background-position: 25%;
+}
+
+#registration-form-cliente .frm{
+	float:right;
+	height: 800px;
+    width: 50%;
+    min-width: 250px;
+    padding: 0 35px;
+    background-size: 100% 100%;
+    background-color: white;
+}
+
+#registration-form-cliente h1{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+#registration-form-cliente .form-control{
+	width: 90%;
+	padding: 12px 20px;
+	height: auto;
+}
+
+@media screen and (max-width: 700px){
+	#registration-form-cliente .image{
+		width: 30%;
+	    background-position: 60%;
+	}
+
+	#registration-form-cliente .frm{
+		width: 70%;
+	}
+
+	#registration-form-cliente .form-control{
+		width: 100%;
+	}
+}
+
+
+	
+	/* cliente */
+
+
+#registration-form-cliente{
+	max-width: 1000px;
+	max-height: 1000px;
+	margin: 100px auto;
+}
+
+
+
+#registration-form-cliente .image{
+	float:left;
+	background-image: url("desk(1).jpg");
+	height: 600px;
+	width: 50%;
+	background-size: cover;
+	background-position: 25%;
+}
+
+#registration-form-cliente .frm{
+	float:right;
+	height: 600px;
+    width: 50%;
+    min-width: 300px;
+    padding: 0 35px;
+    background-size: 100% 100%;
+    background-color: white;
+}
+
+#registration-form-cliente h1{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+#registration-form-cliente .form-control{
+	width: 90%;
+	padding: 0px 0px;
+	height: auto;
+}
+
+@media screen and (max-width: 700px){
+	#registration-form-cliente .image{
+		width: 30%;
+	    background-position: 60%;
+	}
+
+	#registration-form-cliente .frm{
+		width: 100%;
+	}
+
+	#registration-form-cliente .form-control{
+		width: 400%;
+	}
+}
+
+@media screen and (max-width: 500px){
+	#registration-form-cliente .image{
+		display: none;
+	}
+
+	#registration-form-cliente .frm{
+		width: 100%;
+	}
+
+	#registration-form-cliente h1{
+		text-align: center;
+	}
+
+	#registration-form-cliente .btn{
+		width: 100%;
+		margin-top: 30px;
+	}
+}
+
+
+	/* repuestos */
+
+
+#registration-form-repuesto{
+	max-width: 800px;
+	margin: 120px auto;
+}
+
+
+
+#registration-form-repuesto .image{
+	float:left;
+	background-image: url("desk(2).jpg");
+	height: 500px;
+	width: 50%;
+	background-size: cover;
+	background-position: 25%;
+}
+
+#registration-form-repuesto .frm{
+	float:right;
+	height: 500px;
+    width: 50%;
+    min-width: 250px;
+    padding: 0 35px;
+    background-size: 100% 100%;
+    background-color: white;
+}
+
+#registration-form-repuesto h1{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+#registration-form-repuesto .form-control{
+	width: 90%;
+	padding: 12px 20px;
+	height: auto;
+}
+
+@media screen and (max-width: 700px){
+	#registration-form-repuesto .image{
+		width: 30%;
+	    background-position: 60%;
+	}
+
+	#registration-form-repuesto .frm{
+		width: 70%;
+	}
+
+	#registration-form-repuesto .form-control{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 500px){
+	#registration-form-repuesto .image{
+		display: none;
+	}
+
+	#registration-form-repuesto .frm{
+		width: 100%;
+	}
+
+	#registration-form-repuesto h1{
+		text-align: center;
+	}
+
+	#registration-form-repuesto .btn{
+		width: 100%;
+		margin-top: 20px;
+	}
+}
+
+/* Listado Cliente */
+
+
+#registration-form-listadoCliente{
+	max-width: 800px;
+	margin: 600px auto;
+}
+
+
+#registration-form-listadoCliente .frm-listadoCliente{
+	float:right;
+	height: 500px;
+    width: 500%;
+    min-width: 250px;
+    padding: 0 35px;
+    background-size: 200% 200%;
+    background-color: white;
+}
+
+#registration-form-listadoCliente h1{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+#registration-form-listadoCliente .form-control{
+	width: 200%;
+	padding: 12px 20px;
+	height: auto;
+}
+
+@media screen and (max-width: 700px){
+	#registration-form-listadoCliente .image{
+		width: 30%;
+	    background-position: 60%;
+	}
+
+	#registration-form-listadoCliente .frm-listadoCliente{
+		width: 600%;
+	}
+
+	#registration-form-listadoCliente .form-control{
+		width: 500%;
+	}
+}
+
+@media screen and (max-width: 500px){
+	#registration-form-listadoCliente .image{
+		display: none;
+	}
+
+	#registration-form-listadoCliente .frm-listadoCliente{
+		width: 500%;
+	}
+
+	#registration-form-listadoCliente h1{
+		text-align: center;
+	}
+
+	#registration-form-listadoCliente .btn{
+		width: 500%;
+		margin-top: 20px;
+	}
+}
+
+
+
+
+	/* repuestos */
+
+
+#registration-form-repuesto{
+	max-width: 800px;
+	margin: 120px auto;
+}
+
+
+
+#registration-form-repuesto .image{
+	float:left;
+	background-image: url("desk(2).jpg");
+	height: 500px;
+	width: 50%;
+	background-size: cover;
+	background-position: 25%;
+}
+
+
+
+#registration-form-repuesto .frm{
+	float:right;
+	height: 500px;
+    width: 50%;
+    min-width: 250px;
+    padding: 0 35px;
+    background-size: 100% 100%;
+    background-color: white;
+}
+
+#registration-form-repuesto h1{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+#registration-form-repuesto .form-control{
+	width: 90%;
+	padding: 12px 20px;
+	height: auto;
+}
+
+@media screen and (max-width: 700px){
+	#registration-form-repuesto .image{
+		width: 30%;
+	    background-position: 60%;
+	}
+
+	#registration-form-repuesto .frm{
+		width: 70%;
+	}
+
+	#registration-form-repuesto .form-control{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 500px){
+	#registration-form-repuesto .image{
+		display: none;
+	}
+
+	#registration-form-repuesto .frm{
+		width: 100%;
+	}
+
+	#registration-form-repuesto h1{
+		text-align: center;
+	}
+
+	#registration-form-repuesto .btn{
+		width: 100%;
+		margin-top: 20px;
+	}
+}
+
+/* Reporte */
+
+
+
+
+#registration-form-reporte{
+	max-width: 800px;
+	margin: 120px auto;
+}
+
+
+
+#registration-form-reporte .image{
+	float:left;
+	background-image: url("desk(3).jpg");
+	height: 500px;
+	width: 50%;
+	background-size: cover;
+	background-position: 25%;
+}
+
+
+
+#registration-form-reporte .frm{
+	float:right;
+	height: 500px;
+    width: 50%;
+    min-width: 250px;
+    padding: 0 35px;
+    background-size: 100% 100%;
+    background-color: white;
+}
+
+#registration-form-reporte h1{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+#registration-form-reporte .form-control{
+	width: 90%;
+	padding: 12px 20px;
+	height: auto;
+}
+
+@media screen and (max-width: 700px){
+	#registration-form-reporte .image{
+		width: 30%;
+	    background-position: 60%;
+	}
+
+	#registration-form-reporte .frm{
+		width: 70%;
+	}
+
+	#registration-form-reporte .form-control{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 500px){
+	#registration-form-reporte .image{
+		display: none;
+	}
+
+	#registration-form-reporte .frm{
+		width: 100%;
+	}
+
+	#registration-form-reporte h1{
+		text-align: center;
+	}
+
+	#registration-form-reporte .btn{
+		width: 100%;
+		margin-top: 20px;
+	}
+}

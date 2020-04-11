@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles(1).css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+  <title>RegistrarReparacion</title>
+</head>
+
+<br>
+<br>
+<br>
+
+<body>
+
+  <a class="menu-toggle rounded" href="#">
+    <i class=" glyphicon-chevron-left"></i>
+  </a>
+
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="#page-top">Taller BMC</a>
+      </li>
+
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="index2.html">Inicio</a>
+      </li>
+
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="registrarReparacion.html">Registrar Reparacion</a>
+      </li>
+
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="listarReparacion.html">Reparaciones registradas</a>
+      </li>
+
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="eliminarReparacion.html">Eliminar Reparacion</a>
+      </li>
+
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="actualizarReparacion.html">Actualizar Reparacion</a>
+      </li>
+
+
+
+    </ul>
+  </nav>
+
+  <div class="container" id="advanced-search-form">
+    <h2>Registrar Reparacion</h2>
+    <form method="post" action="../../Back/registroReparacion.php">
+
+      <div class="form-group">
+        <label for="codigo">Nombre del Trabajador</label>
+        <select class="form-control" name="codTrabajador" id="codTrabajador">
+
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="codigo">Nombre del Cliente</label>
+        <select class="form-control" name="codCliente" id="codCliente">
+
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="codigo">Nombre del Administrador</label>
+        <select class="form-control" name="codAdmin" id="codAdmin">
+
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="codigo">Nombre del Repuesto</label>
+        <select class="form-control" name="codRepu" id="codRepu" onchange="precioRep()">
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="username">Valor Total</label>
+        <input type="text" class="form-control" id="valorReparacion" name="valorReparacion">
+      </div>
+
+      <div class="form-group-area">
+
+        <textarea class="form-control" id="descripcion" name="descripcion" placeholder="Descripcion de la reparacion"
+          rows="4" cols="10"></textarea>
+      </div>
+
+
+
+
+
+
+      <div class="modal-footer">
+
+        <button type="submit" class="btn btn-primary" id="guardar_datos">Registrar</button>
+
+    </form>
+  </div>
+  </div>
+</body>
+<br>
+<br>
+<br>
+
+<footer class="footer text-center">
+
+
+  <p class="text-muted small mb-0">Taller MBC , UFPS-II2018</p>
+
+</footer>
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+  <i class="fas fa-angle-up"></i>
+</a>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="js/llenarcombos.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/stylish-portfolio.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $.post('../../Back/TrabajadorOpcion.php').done(function (result) {
+      $('#codTrabajador').html(result);
+    });
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $.post('../../Back/ClienteOpcion.php').done(function (result) {
+      $('#codCliente').html(result);
+    });
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $.post('../../Back/AdminOpcion.php').done(function (result) {
+      $('#codAdmin').html(result);
+    });
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $.post('../../Back/repuestoOpcion.php').done(function (result) {
+      $('#codRepu').html(result);
+    });
+  });
+</script>
+
+</body>
+
+</html>
